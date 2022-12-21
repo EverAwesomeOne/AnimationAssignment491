@@ -1,10 +1,10 @@
 class CharacterUp {
     constructor(game) {
         this.game = game;
-        this.animator = new Animator(ASSET_MANAGER.getAsset("./character_up.png"), 36, 0, 380, 648, 4, 0.2);
+        this.animator = new Animator(ASSET_MANAGER.getAsset("./character_up.png"), 18, 0, 380, 648, 4, 0.2);
 
-        this.x = 600;
-        this.y = 768;
+        this.x = 450;
+        this.y = 520;
         this.speed = 100;
     };
 
