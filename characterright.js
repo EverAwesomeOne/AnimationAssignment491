@@ -1,9 +1,9 @@
 class CharacterRight {
     constructor(game) {
         this.game = game;
-        this.animator = new Animator(ASSET_MANAGER.getAsset("./character_right.png"), 30, 0, 380, 648, 4, 0.2);
+        this.animator = new Animator(ASSET_MANAGER.getAsset("./character_right.png"), 30, 0, 380, 460, 4, 0.2);
 
-        this.x = 1024 / 3;
+        this.x = 0;
         this.y = 0;
         this.speed = 100;
     };
