@@ -15,6 +15,8 @@ ASSET_MANAGER.downloadAll(() => {
 	gameEngine.addEntity(new CharacterLeft(gameEngine));
 	gameEngine.addEntity(new CharacterDown(gameEngine));
 	gameEngine.addEntity(new CharacterUp(gameEngine));
+	gameEngine.addEntity(new CharacterLeftToRight(gameEngine));
+	gameEngine.addEntity(new CharacterUpAndDown(gameEngine));
 
 	gameEngine.init(ctx);
 
