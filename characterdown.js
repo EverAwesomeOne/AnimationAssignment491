@@ -1,7 +1,7 @@
 class CharacterDown {
     constructor(game) {
         this.game = game;
-        this.animator = new Animator(ASSET_MANAGER.getAsset("./character_down.png"), 36, 25, 380, 648, 4, 0.2);
+        this.animator = new Animator(ASSET_MANAGER.getAsset("./character_down.png"), 16, 25, 380, 648, 4, 0.2);
 
         this.x = 835;
         this.y = 0;

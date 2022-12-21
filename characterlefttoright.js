@@ -4,9 +4,10 @@ class CharacterLeftToRight {
         this.animator = new Animator(ASSET_MANAGER.getAsset("./character_right.png"), 30, 0, 380, 648, 4, 0.2);
         this.ar = new Animator(ASSET_MANAGER.getAsset("./character_right.png"), 30, 0, 380, 460, 4, 0.2);
         this.al = new Animator(ASSET_MANAGER.getAsset("./character_left.png"), 30, 0, 380, 460, 4, 0.2);
+
         this.x = 0;
-        this.animatortype = 0;
         this.y = 275;
+        this.animatortype = 0;
         this.speed = 100;
     };
 
@@ -17,12 +18,12 @@ class CharacterLeftToRight {
         }
 
         // set animator to go left
-        if (this.x > 1024 / 3) {
+        if (this.x > 1024 / 4) {
             this.animator = this.al;
             this.animatortype = 1;
         }
 
-        // if animator is left then go left
+        // if animator is 1 then go left
         if (this.animatortype === 1) {
             this.x -= this.speed*this.game.clockTick;
         }

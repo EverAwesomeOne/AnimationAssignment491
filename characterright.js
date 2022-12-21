@@ -10,7 +10,7 @@ class CharacterRight {
 
     update() {
         this.x += this.speed*this.game.clockTick;
-        if (this.x > 1024 / 3) this.x = -220;
+        if (this.x > 1024 / 4) this.x = -220;
     };
 
     draw(ctx) {
