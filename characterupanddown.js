@@ -12,15 +12,13 @@ class CharacterUpAndDown {
     };
 
     update() {
-        /*this.y -= this.speed*this.game.clockTick;
-        if (this.y < -300) this.y = 768;*/
         // go up
-        if (this.y === 768 || this.animatortype === 0) {
+        if (this.animatortype === 0) {
             this.y -= this.speed*this.game.clockTick;
         }
 
         // set animator to go down
-        if (this.y < 0) {
+        if (this.y < -30) {
             this.animator = this.ad;
             this.animatortype = 1;
         }
@@ -31,7 +29,7 @@ class CharacterUpAndDown {
         }
 
         // set animator to go up
-        if (this.y > 520) {
+        if (this.y > 510) {
             this.animatortype = 0;
             this.animator = this.au;
         }
