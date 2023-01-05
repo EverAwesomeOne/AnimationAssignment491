@@ -103,6 +103,10 @@ class GameEngine {
         this.ctx.lineTo(440,768);
 
         this.ctx.stroke();
+        this.ctx.fillStyle = 'white';
+        this.ctx.rect(1024 / 4 + 2, 0, 439 - (1024 / 4 + 5), 230)
+        this.ctx.rect(1024 / 4 + 2, 540, 439 - (1024 / 4 + 5), 228)
+        this.ctx.fill();
     };
 
     update() {
