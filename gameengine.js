@@ -88,6 +88,25 @@ class GameEngine {
         for (let i = this.entities.length - 1; i >= 0; i--) {
             this.entities[i].draw(this.ctx, this);
         }
+
+        this.ctx.lineWidth = 5;
+        this.ctx.strokeStyle = 'red';
+        this.ctx.beginPath();
+
+        this.ctx.moveTo(1024 / 4,0);
+        this.ctx.lineTo(1024 / 4,230);
+
+        this.ctx.moveTo(1024 / 4,540);
+        this.ctx.lineTo(1024 / 4,768);
+
+        this.ctx.moveTo(440,0);
+        this.ctx.lineTo(440,768);
+
+        this.ctx.stroke();
+        this.ctx.fillStyle = 'white';
+        this.ctx.rect(1024 / 4 + 2, 0, 439 - (1024 / 4 + 5), 230)
+        this.ctx.rect(1024 / 4 + 2, 540, 439 - (1024 / 4 + 5), 228)
+        this.ctx.fill();
     };
 
     update() {
@@ -114,6 +133,6 @@ class GameEngine {
         this.draw();
     };
 
-};
+}
 
 // KV Le was here :)
